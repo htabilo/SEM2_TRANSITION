@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Transiciones CSS</title>
+  <style>
+    /* Transición sobre todos los divs del documento HTML */
+    div {
+      width: 500px;
+      height: 100px;
+      background: gray;
+      transition: width 1s;
+    }
+
+    /* Cambia el tamaño del div cuando se pasa el ratón sobre éste */
+    div:hover {
+      width: 800px;
+    }
+
+    .transicion-linear {
+      transition-timing-function: linear;
+    }
+
+    .transicion-ease {
+      transition-timing-function: ease;
+    }
+
+    .transicion-ease-in {
+      transition-timing-function: ease-in;
+    }
+
+    .transicion-ease-out {
+      transition-timing-function: ease-out;
+    }
+
+    .transicion-ease-in-out {
+      transition-timing-function: ease-in-out;
+    }
+
+    /* Transición asignada con propiedades separadas */
+    .transicion-separada {
+      transition-property: width;
+      transition-duration: 2s;
+      transition-timing-function: linear;
+      transition-delay: 1s;
+    }
+
+    /* Transición asignada en una misma propiedad */
+    .transicion-completa {
+      transition: width 2s linear 1s;
+
+      .transición-mia{
+        transition: width 2s linear 3s;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="transicion-linear">
+    Transición Linear
+  </div>
+
+  <div class="transicion-ease">
+    Transición Ease
+  </div>
+
+  <div class="transicion-ease-in">
+    Transición Ease-in
+  </div>
+
+  <div class="transicion-ease-out">
+    Transición Ease-out
+  </div>
+
+  <div class="transicion-ease-in-out">
+    Transición Ease-in-out
+  </div>
+
+  <div class="transicion-separada">
+    Transición Separada
+  </div>
+
+  <div class="transicion-completa">
+    Transición Completa
+  </div>
+
+
+  <div class="transición-mia">
+    transicion mia
+  </div>
+</body>
+</html>
